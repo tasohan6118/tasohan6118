@@ -1,0 +1,19 @@
+{
+    "title": "Sample Book",
+    "author": "John Doe",
+    "year": 2024,
+    "description": "This is a sample book description.",
+    "publisher": "Sample Publisher",
+    "isbn": "978-3-16-148410-0",
+    "genre": "Fiction",
+    "pages": 350,
+    "language": "English",
+    "edition": 2,
+    "rating": 4.5,
+    "price": 19.99,
+    "availability": "In Stock",
+    "keywords": ["fiction", "sample book", "2024"],
+    "format": "Hardcover",
+    "illustrator": "Jane Smith",
+    "target_audience": "Adults"
+}

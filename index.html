@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Simple Web Server</title>
+    <style>
+        /* General Reset */
+        body, h1, h2, p, a, form, input, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F3F4F6;
+            color: #333;
+            padding: 30px;
+            line-height: 1.6;
+        }
+
+        /* Container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px 30px;
+        }
+
+        /* Headings */
+        h1 {
+            font-size: 32px;
+            color: #444;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #555;
+            margin: 20px 0 10px;
+        }
+
+        /* Paragraph */
+        p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Links */
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Form Styling */
+        form {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        label {
+            font-size: 16px;
+            color: #333;
+        }
+
+        input[type="text"] {
+            font-size: 16px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="submit"] {
+            font-size: 16px;
+            padding: 10px 20px;
+            color: #FFF;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Simple Web Server</h1>
+        <p>This is a clean and modern web server example using Python.</p>
+        <p>Click on the <a href="/book">Book Page</a> to explore more.</p>
+
+        <h2>Submit Data</h2>
+        <p>Use the form below to send data to the server:</p>
+        <form action="/save" method="POST">
+            <label for="data">Enter your data:</label>
+            <input type="text" id="data" name="data" placeholder="Type something...">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2024 Simple Web Server. All Rights Reserved.
+    </footer>
+</body>
+</html>
